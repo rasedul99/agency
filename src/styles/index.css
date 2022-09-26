@@ -1,1 +1,33 @@
-
+/* 
+  Style rules for sectionOne 
+*/
+.sectionOne__left--text {
+  font-size: var(--body);
+  font-family: var(--font-2);
+  color: var(--color-white-75);
+}
+.sectionOne__left--btn {
+  align-self: flex-start;
+}
+.sectionTwo__content--text {
+  font-family: var(--font-2);
+  font-size: var(--sub);
+}
+.sectionTwo {
+  display: grid;
+  gap: 30px;
+  padding: 40px 0;
+}
+.sectionTwo__logo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* align-items: center;
+  justify-content: center; */
+}
+.sectionTwo__logo img {
+  align-self: center;
+  justify-self: center;
+}
+.sectionTwo__btn {
+  justify-self: center;
+}

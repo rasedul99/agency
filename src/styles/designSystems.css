@@ -39,16 +39,7 @@
   background-color: var(--color-green-100);
 }
 
-/* [class^="navbar__menu--"] {
-  text-decoration: none;
-  color: var(--color-white-100);
-} */
 /* common class for stylesheet */
-
-.container {
-  max-width: 1140px;
-  margin: auto;
-}
 
 .navbar {
   display: flex;
@@ -90,7 +81,65 @@
 .hide {
   display: none;
 }
+.label {
+  font-family: var(--font-2);
+  font-size: var(--label);
+  letter-spacing: var(--ls);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+}
+.common-title {
+  font-size: var(--h1);
+  font-family: var(--font-1);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: var(--color-white-100);
+}
+.text-green {
+  color: var(--color-green-100);
+}
+
+.white-btn,
+.dark-btn {
+  background-color: var(--color-white-100);
+  color: var(--color-dark-100);
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-2);
+  font-size: var(--h5);
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+.dark-btn {
+  background-color: var(--color-dark-100);
+  color: var(--color-white-100);
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
