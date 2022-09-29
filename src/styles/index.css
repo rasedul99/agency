@@ -85,3 +85,35 @@
 .sectionFive__btn {
   justify-self: center;
 }
+@media (max-width: 1200px) {
+  .sectionTwo__logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionOne__left {
+    order: 1;
+  }
+  .sectionOne__right {
+    order: 0;
+  }
+  .sectionFour__left {
+    order: 1;
+  }
+  .sectionFour__right {
+    order: 0;
+  }
+  .sectionFive__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .sectionFive__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sectionTwo__logo {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
