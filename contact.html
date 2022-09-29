@@ -4,7 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="icon" href="/src/images/Logo/LogoWhite.svg" />
+    <link rel="stylesheet" href="/src/styles/designSystems.css" />
+    <link rel="stylesheet" href="/src/styles/contact.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="hero">
+      <div class="navbar container">
+        <div class="navbar__logo">
+          <img src="/src/images/Logo/LogoWhite.svg" alt="logo" />
+          <div class="navbar__logo--text">Start</div>
+        </div>
+        <div class="navbar__menu hidden">
+          <a href="index.html" class="navbar__manu--home">Home</a>
+          <a href="services.html" class="navbar__manu--services">Services</a>
+          <a href="contact.html" class="navbar__manu--contact">Contact</a>
+        </div>
+        <div class="navbar__icon">
+          <i class="bi bi-list"></i>
+          <i class="bi bi-x hide"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sectionOne container text-center">
+      <div class="sectionOne__title common-title">Contact Us</div>
+      <div class="sectionOne__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        dolore.
+      </div>
+    </div>
+    <div class="sectionTwo container grid">
+      <div class="sectionTwo__left">
+        <form action="" class="form">
+          <label for="name">Name</label>
+          <input placeholder="Your name here" type="text" id="name" />
+          <label for="mail">Email</label>
+          <input placeholder="Email" type="email" id="mail" />
+          <label for="message">message</label>
+          <textarea
+            placeholder="your message here"
+            id="message"
+            cols="30"
+            rows="6"
+          ></textarea>
+          <button type="submit" class="submit-btn dark-btn">Submit</button>
+        </form>
+      </div>
+      <img
+        class="sectionTwo__right responsive-image"
+        src="src/images/Contact/map.svg"
+        alt=""
+      />
+    </div>
+    <div class="footerWrapper">
+      <div class="footerLinks container">
+        <div class="footerLinks__socials">
+          <img src="src/images/socials/facebook.svg" alt="" />
+          <img src="src/images/socials/instagram.svg" alt="" />
+          <img src="src/images/socials/pinterest.svg" alt="" />
+          <img src="src/images/socials/tiktok.svg" alt="" />
+          <img src="src/images/socials/twitter.svg" alt="" />
+          <img src="src/images/socials/whatsapp.svg" alt="" />
+          <img src="src/images/socials/youtube.svg" alt="" />
+        </div>
+        <div class="footerLinks__copyright text-white text-center">
+          @ Start, 2022. All rights reserved
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/main.js"></script>
 </html>
